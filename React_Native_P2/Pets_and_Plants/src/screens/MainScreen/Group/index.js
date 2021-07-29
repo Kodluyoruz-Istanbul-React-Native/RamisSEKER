@@ -96,8 +96,9 @@ const Group = () => {
 const styles = StyleSheet.create({
     container: {
         
-        backgroundColor: "#e2f0d8",
-        paddingTop:10,
+        backgroundColor: "#e9f5db",
+        
+        
         
         
     },

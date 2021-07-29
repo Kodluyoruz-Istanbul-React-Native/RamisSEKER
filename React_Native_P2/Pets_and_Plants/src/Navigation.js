@@ -5,7 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 
-import { MainScreen, SplashScreen } from "~screens";
+import { MainScreen, SplashScreen, LoginScreen } from "~screens";
 
 const Stack1 = createStackNavigator();
 
@@ -27,12 +27,14 @@ const Navigation = () => {
         <NavigationContainer>
             <Stack1.Navigator headerMode={'none'}>
                 <Stack1.Screen
-                    name={showSplashScreen ? 'SplashScreen' : 'MainScreen'}
-                    component={showSplashScreen ? SplashScreen : MainScreen}
+                    name={showSplashScreen ? 'SplashScreen' : 'LoginScreen'}
+                    component={showSplashScreen ? SplashScreen : LoginScreen}
                 />
             </Stack1.Navigator>
         </NavigationContainer>
-      );
+    );
+    
 };
+
 
 export default Navigation;

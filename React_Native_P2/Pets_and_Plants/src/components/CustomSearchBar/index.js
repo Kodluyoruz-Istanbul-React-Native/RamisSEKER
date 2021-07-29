@@ -23,12 +23,12 @@ class CustomSearchBar extends React.Component {
             placeholder="Search Groups.."
             onChangeText={this.updateSearch}
             value={search}
-            containerStyle={{ backgroundColor: "#C9D8B6",borderBottomColor: 'transparent',
+            containerStyle={{ backgroundColor: "#e9f5db",borderBottomColor: 'transparent',
                               borderTopColor: 'transparent',}}
-            inputStyle={{ backgroundColor: "#e2f0d8", }}
+            inputStyle={{ backgroundColor: "#e2f0d8", borderRadius:10, }}
             platform={Platform.OS}     
-            leftIconContainerStyle={{ backgroundColor: "#C9D8B6",}}
-            rightIconContainerStyle={{ backgroundColor: "#C9D8B6"}}
+            leftIconContainerStyle={{ paddingLeft:10,backgroundColor: "#e9f5db",}}
+            rightIconContainerStyle={{ backgroundColor: "#e9f5db"}}
             />
               </View>
         </View>

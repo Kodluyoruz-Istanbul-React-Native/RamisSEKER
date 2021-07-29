@@ -13,6 +13,8 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.List;
   import com.facebook.react.bridge.JSIModulePackage; // <- add
   import com.swmansion.reanimated.ReanimatedJSIModulePackage; // <- add
+ import  io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
+
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -29,6 +31,10 @@ public class MainApplication extends Application implements ReactApplication {
           List<ReactPackage> packages = new PackageList(this).getPackages();
           // Packages that cannot be autolinked yet can be added manually here, for example:
           // packages.add(new MyReactNativePackage());
+          packages.add(new ReactNativeFirebaseAppPackage());
+           packages.add(new RNFirebaseAuthPackage());
+         
+
           return packages;
         }
 

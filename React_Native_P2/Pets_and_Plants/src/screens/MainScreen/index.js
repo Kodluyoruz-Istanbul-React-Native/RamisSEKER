@@ -18,14 +18,13 @@ const MainScreen = () => {
     
     return (
         
-        <View style={{ flex: 1, backgroundColor: "#C9D8B6" }}>
+        <View style={{ flex: 1, backgroundColor: "#F8FFF8" }}>
            
             <Tab.Navigator
-                
                 initialRouteName="Home"
                 tabBarOptions={{
                     activeTintColor: "#57837B",
-                    style: { backgroundColor: "#C9D8B6", position: "absolute", }
+                    style: { backgroundColor: "#e9f5db", position: "absolute", }
                 }}
             >
                 
@@ -33,11 +32,8 @@ const MainScreen = () => {
                     name="Group"
                     component={Group}
                     options={{
-                        
                         tabBarIcon: ({ color, size }) => (
-                            <MaterialCommunityIcons name="select-group" color={color} size={size}
-
-                            />
+                            <MaterialCommunityIcons name="select-group" color={color} size={size}/>
                         ),
                     }}
                 />
