@@ -27,7 +27,6 @@ const MainScreen = () => {
 
   return (
         <View style={{ flex: 1, }}>
-             
            <Tab.Navigator
                 initialRouteName="Home"
                 tabBarOptions={{
@@ -53,8 +52,9 @@ const MainScreen = () => {
                         ),}}/>
                 <Tab.Screen
                     name="Photo"
-                    component={Profile}
+                    component={Photo}
                     options={{
+                        tabBarVisible: false,
                         tabBarIcon: ({ color, size }) => (
                             <Feather name="plus-square" color={color} size={32}
 
@@ -85,12 +85,7 @@ const styles = StyleSheet.create({
     padding: 20,
     backgroundColor: '#FFFFFF',
     paddingTop: 10,
-    //  borderTopLeftRadius: 20,
-    //  borderTopRightRadius: 20,
-    //  shadowColor: '#000000',
-    //  shadowOffset: {width: 0, height: 0},
-    //  shadowRadius: 5,
-    //  shadowOpacity: 0.4,
+    
   },
   header: {
     backgroundColor: '#FFFFFF',

@@ -65,18 +65,9 @@ const Home = () => {
     // // Show and Hide  likes and Comments
     const [isShow, setIsShow] = useState(false);
 
-
-    
-
-   
-
-    
     return (
         <SafeAreaView style={styles.container}>
             <LinearGradient
-        style={{
-            
-        }}
             start={{ x: 0, y: 0 }}
             end={{ x: 1, y: 1 }}
             colors={["#FAAD80","#FF6767","#FF3D68","#FF3D68"]}
@@ -87,12 +78,12 @@ const Home = () => {
             keyExtractor={(item, index) => index.toString()}
             renderItem={({ item }) => {
                 return (
-            <View style={styles.contentContainer}>
-               <TouchableOpacity>
-                    <View style={{ flexDirection: "column" }}>
-                            <View style={styles.username}>
-                                 <Image style={styles.profilePhoto} source={{ uri: item.profilePhoto }} resizeMode="cover" />
-                                  <View style={{ marginLeft: 10, }}>
+                   <View style={styles.contentContainer}>
+                     <TouchableOpacity>
+                       <View style={{ flexDirection: "column" }}>
+                           <View style={styles.username}>
+                               <Image style={styles.profilePhoto} source={{ uri: item.profilePhoto }} resizeMode="cover" />
+                               <View style={{ marginLeft: 10, }}>
                                      <Text style={{ fontWeight: "bold", fontSize: 14,color:"black" }}>{item.profileUsername}</Text>
                                      <Text style={{ color: "grey" }}>{item.sharedlocation}</Text>
                             </View>

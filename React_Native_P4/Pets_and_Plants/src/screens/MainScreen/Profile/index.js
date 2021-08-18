@@ -41,7 +41,7 @@ const Child = ({ item }) => {
     return (
         <View style={styles.contentPhotosContainer}>
             <TouchableOpacity>
-              <Image style={styles.contentPhotos}  source={{ uri :item.photos}} resizeMode="cover"/>
+              <Image style={styles.contentPhotos}  source={{ uri :item.photos }} resizeMode="cover"/>
             </TouchableOpacity>
         </View>
     );
@@ -60,7 +60,6 @@ const Profile = () => {
         
         <View style={styles.container}>
             <View style={styles.backgroundContainer}>
-                
                 <ImageBackground style={styles.backgroundPhoto} source={require("../../../assets/images/oda-manzara.jpg")}>
                     <TouchableOpacity style={{alignSelf:"flex-end"}} onPress={() => navigation.navigate("EditProfile")}>
                        <Ionicons style={[styles.icons,{marginRight:15,}]}  name={"reorder-three-outline"} size={28} />
@@ -72,7 +71,6 @@ const Profile = () => {
                             elevation: 5,
                             alignSelf: "flex-end",
                             bottom: -20,
-                            
                         }}>
                           <Image style={styles.profilePhoto}  source={{uri: `data:image/jpeg;base64,${photoUri}`}} />
                         </View>
@@ -93,12 +91,10 @@ const Profile = () => {
                             start={{ x: 0, y: 0 }}
                             end={{ x: 1, y: 1 }}
                                 colors={["#FAAD80", "#FF6767", "#FF3D68"]}>
-                                
-                               <TouchableOpacity style={{padding:10}} >
-                                 <Text style={styles.followText}>Follow</Text>
-                                    </TouchableOpacity>
-                                    
-                                </LinearGradient>
+                                <TouchableOpacity style={{padding:10}} >
+                                    <Text style={styles.followText}>Follow</Text>
+                                </TouchableOpacity>
+                            </LinearGradient>
                            </View>
                         </View>
                 </ImageBackground>

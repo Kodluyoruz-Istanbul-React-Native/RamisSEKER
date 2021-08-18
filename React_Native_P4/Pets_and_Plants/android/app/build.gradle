@@ -140,6 +140,7 @@ android {
         versionCode 1
         versionName "1.0"
         vectorDrawables.useSupportLibrary = true
+        missingDimensionStrategy 'react-native-camera', 'general'
     }
     splits {
         abi {
@@ -192,7 +193,7 @@ dependencies {
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
     implementation 'com.google.firebase:firebase-database'
-    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
     implementation platform('com.google.firebase:firebase-bom:28.3.0')
     compile project(':react-native-vector-icons')
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {

@@ -1,0 +1,1 @@
+import GALLERY from "./images/gallery.svg";

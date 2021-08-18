@@ -16,6 +16,8 @@ target 'pets_and_plants' do
 
   pod 'RNImageCropPicker', :path => '../node_modules/react-native-image-crop-picker'
 
+  pod 'react-native-camera', :path => '../node_modules/react-native-camera'
+
   target 'pets_and_plantsTests' do
     inherit! :complete
     # Pods for testing

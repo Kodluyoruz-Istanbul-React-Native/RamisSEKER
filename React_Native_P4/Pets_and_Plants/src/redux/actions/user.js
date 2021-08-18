@@ -75,6 +75,31 @@ export const USER_SIGNIN = (email, password) => async dispatch => {
             console.log(error);
 
         });
+    
+    
 };
+
+export const USER_POSTURI = () => async dispatch => {
+
+  // console.log("test");
+      // const pathFile = `/images/${uid}_${new Date().getTime()}`
+      // const reference = storage().ref(pathFile);
+      // await reference.putFile(postUri.uri);
+      
+      
+      // const task = reference.putFile(postUri.uri);
+
+      // task.on('state_changed', taskSnapshot => {
+      //   console.log(`${taskSnapshot.bytesTransferred} transferred out of ${taskSnapshot.totalBytes}`);
+      // });
+
+      // task.then(() => {
+      //   console.log('Image uploaded to the bucket!');
+      // });
+      // const url = await storage().ref(pathFile).getDownloadURL();
+
+
+
+}
 
 
